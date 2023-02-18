@@ -3,10 +3,9 @@ package pl.javastart.task;
 import java.util.Scanner;
 
 public class Logic {
-    Scanner scanner = new Scanner(System.in);
-    private String divisionLine = "\n";
 
     public int[][] createAndFillTable() {
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj liczbę wierszy.");
         int numberOfRows = scanner.nextInt();
         System.out.println("Podaj liczbę kolumn");
@@ -22,6 +21,7 @@ public class Logic {
     }
 
     public void printTable(int[][] array) {
+        String divisionLine = "\n";
         for (int i = 0; i < array[0].length; i++) {
             divisionLine = (divisionLine + "------");
         }
